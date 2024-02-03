@@ -1,48 +1,48 @@
 @font-face {
   font-family: "Foco_Bold";
-  src: url("/fonts/AcerFoco_Bd.woff2") format("woff2"),
-    url("/fonts/AcerFoco_Bd.woff") format("woff"),
-    url("/fonts/AcerFoco_Bd.otf") format("otf");
+  src: url("fonts/AcerFoco_Bd.woff2") format("woff2"),
+    url("fonts/AcerFoco_Bd.woff") format("woff"),
+    url("fonts/AcerFoco_Bd.otf") format("otf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter_Bold";
-  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-    url("/fonts/Inter-Bold.woff") format("woff"),
-    url("/fonts/Inter-Bold.eot") format("eot"),
-    url("/fonts/Inter-Bold.ttf") format("ttf");
+  src: url("fonts/Inter-Bold.woff2") format("woff2"),
+    url("fonts/Inter-Bold.woff") format("woff"),
+    url("fonts/Inter-Bold.eot") format("eot"),
+    url("fonts/Inter-Bold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Foco_Regular";
-  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
-    url("/fonts/Inter-Regular.woff") format("woff"),
-    url("/fonts/Inter-Regular.eot") format("eot"),
-    url("/fonts/Inter-Regular.ttf") format("ttf");
+  src: url("fonts/Inter-Regular.woff2") format("woff2"),
+    url("fonts/Inter-Regular.woff") format("woff"),
+    url("fonts/Inter-Regular.eot") format("eot"),
+    url("fonts/Inter-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter_Light";
-  src: url("/fonts/Inter-Light.woff2") format("woff2"),
-    url("/fonts/Inter-Light.woff") format("woff"),
-    url("/fonts/Inter-Light.eot") format("eot"),
-    url("/fonts/Inter-Light.ttf") format("ttf");
+  src: url("fonts/Inter-Light.woff2") format("woff2"),
+    url("fonts/Inter-Light.woff") format("woff"),
+    url("fonts/Inter-Light.eot") format("eot"),
+    url("fonts/Inter-Light.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Foco_Light";
-  src: url("/fonts/AcerFoco_Lt.woff2") format("woff2"),
-    url("/fonts/AcerFoco_Lt.woff") format("woff"),
-    url("/fonts/AcerFoco_Lt.eot") format("eot"),
-    url("/fonts/AcerFoco_Lt.ttf") format("ttf");
+  src: url("fonts/AcerFoco_Lt.woff2") format("woff2"),
+    url("fonts/AcerFoco_Lt.woff") format("woff"),
+    url("fonts/AcerFoco_Lt.eot") format("eot"),
+    url("fonts/AcerFoco_Lt.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -50,9 +50,9 @@
 
 @font-face {
   font-family: "Prata";
-  src: url("/fonts/Prata-Regular.woff") format("woff"),
-    url("/fonts/Prata-Regular.ttf") format("ttf"),
-    url("/fonts/Prata-Regular.eot") format("eot");
+  src: url("fonts/Prata-Regular.woff") format("woff"),
+    url("fonts/Prata-Regular.ttf") format("ttf"),
+    url("fonts/Prata-Regular.eot") format("eot");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -214,7 +214,7 @@ header {
 }
 /* Делаем треугольничик справа через псевдоэдемент с точки зрения логики, когда это будет натягиваться на БЭКЕНД проще меню добавить класс где есть SUBMENU нежеле внедрять тег <i> */
 .menu-item-has-children:after {
-  content: url("/images/menu.svg"); /* Путь к вашему SVG-изображению */
+  content: url("images/menu.svg"); /* Путь к вашему SVG-изображению */
   display: inline-block; /* Делаем изображение инлайновым блоком, чтобы применить размеры и стили */
   margin-left: 2px;
   vertical-align: top;
@@ -812,7 +812,7 @@ header {
   z-index: -1;
 }
 .subscription:after {
-  content: url("/images/lines.png");
+  content: url("images/lines.png");
   display: block;
   clear: both;
   position: absolute;
@@ -1506,7 +1506,7 @@ header {
     background-position-y: bottom;*/
   }
   .subscription:after {
-    content: url(/images/flowers_subscribtion_svg.svg);
+    content: url(images/flowers_subscribtion_svg.svg);
     display: block;
     clear: both;
     position: absolute;
