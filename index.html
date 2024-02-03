@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="/fonts/Prata-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin />
+    <link
+      rel="preload"
+      href="/fonts/AcerFoco_Lt.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="/fonts/AcerFoco_Bd.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <!-- Подключение стилей Swiper с CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <!-- Здесь верхняя часть шапки -->
+          <div class="logo">
+            <img src="/images/logo.svg" width="151" height="68" alt="Логотип" />
+          </div>
+          <div class="info">
+            <div class="address">
+              <p class="address_p">
+                м. Октябрьская, 4-ый Добрынинский пер. д.8
+                <a href="#" class="address_a"
+                  ><i><img src="/images/location.svg" alt="location" /></i>На
+                  карте</a
+                >
+              </p>
+              <p class="address_p address_p_second">
+                м. Бауманская, ул. Ладожская 10<a href="#" class="address_a"
+                  ><i><img src="/images/location.svg" alt="location" /></i>На
+                  карте</a
+                >
+              </p>
+            </div>
+            <div class="working_hours">
+              <p class="working_hours_p">8:00-21:00</p>
+              <p class="working_hours_p working_hours_p_second">Без выходных</p>
+            </div>
+          </div>
+
+          <div class="header_contacts">
+            <div>
+              <a href="tel:+74956425797" class="phone">+7 (495) 642-57-97</a>
+              <a href="#" class="callback">Заказать звонок</a>
+            </div>
+            <div>
+              <a href="#" class="soc-link social_one">
+                <svg class="soc-link__icon icon-whatsapp">
+                  <use xlink:href="/images/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="soc-link social_two">
+                <svg class="soc-link__icon icon-telegram">
+                  <use xlink:href="/images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вторая часть шапки Меню-->
+      <div class="header_bottom_full_border">
+        <div class="container header_bottom_full_size">
+          <div class="header-bottoms">
+            <nav class="header-nav desktop_menu">
+              <ul class="main_menu">
+                <li id="menu_item_1" class="menu_item menu-item-has-children">
+                  <a href="#" class="menu_item_link">Каталог</a>
+                  <ul class="submenu submenu_catalog">
+                    <li><a href="#">Авторские букеты</a></li>
+                    <li><a href="#">Монобукеты</a></li>
+                    <li><a href="#">Цветочные композиции</a></li>
+                    <li><a href="#">Съедобные композиции</a></li>
+                    <li><a href="#">Подарки</a></li>
+                  </ul>
+                </li>
+                <li id="menu_item_2" class="menu_item menu-item-has-children">
+                  <a href="#" class="menu_item_link">Выбор букета</a>
+                  <ul class="submenu submenu_bouquet_selection">
+                    <li><a href="#">Кому</a></li>
+                    <li><a href="#">Цветовая гамма</a></li>
+                    <li><a href="#">Цветы</a></li>
+                    <li><a href="#">Повод</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                  </ul>
+                </li>
+                <li id="menu_item_3" class="menu_item">
+                  <a href="#" class="menu_item_link">Цветочная подписка</a>
+                </li>
+                <li id="menu_item_4" class="menu_item">
+                  <a href="#" class="menu_item_link">Корпоративным клиентам</a>
+                </li>
+                <li id="menu_item_5" class="menu_item">
+                  <a href="#" class="menu_item_link">Доставка и оплата</a>
+                </li>
+                <li id="menu_item_6" class="menu_item menu-item-has-children">
+                  <a href="#" class="menu_item_link">О нас</a>
+                  <ul class="submenu submenu_about_Us">
+                    <li><a href="#">О мастерской</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Цветочная подписка</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+              <button
+                id="navbar-toggle"
+                type="button"
+                class="navbar-toggle"
+                value="Меню навигации"
+                aria-label="Меню навигации">
+                <span class="bars">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </span>
+              </button>
+            </div>
+            <div id="mobile_menu" class="mobile_menu">
+              <div class="mobile_menu_nav">
+                <nav class="header-nav">
+                  <ul class="main_menu">
+                    <li
+                      id="menu_item_1"
+                      class="menu_item menu-item-has-children menu_item_1">
+                      <a href="#" class="menu_item_link">Каталог</a>
+                      <div
+                        id="toggle-sign"
+                        class="plus toggle-sign-menu-item_1">
+                        <span class="horizontal-line"></span>
+                        <span class="vertical-line"></span>
+                      </div>
+                      <ul class="submenu submenu_catalog">
+                        <li><a href="#">Авторские букеты</a></li>
+                        <li><a href="#">Монобукеты</a></li>
+                        <li><a href="#">Цветочные композиции</a></li>
+                        <li><a href="#">Съедобные композиции</a></li>
+                        <li><a href="#">Подарки</a></li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu_item_2"
+                      class="menu_item menu-item-has-children menu_item_2">
+                      <a href="#" class="menu_item_link">Выбор букета</a>
+                      <div
+                        id="toggle-sign"
+                        class="plus toggle-sign-menu-item_2">
+                        <span class="horizontal-line"></span>
+                        <span class="vertical-line"></span>
+                      </div>
+                      <ul class="submenu submenu_bouquet_selection">
+                        <li><a href="#">Кому</a></li>
+                        <li><a href="#">Цветовая гамма</a></li>
+                        <li><a href="#">Цветы</a></li>
+                        <li><a href="#">Повод</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                      </ul>
+                    </li>
+                    <li id="menu_item_3" class="menu_item">
+                      <a href="#" class="menu_item_link">Цветочная подписка</a>
+                    </li>
+                    <li id="menu_item_4" class="menu_item">
+                      <a href="#" class="menu_item_link"
+                        >Корпоративным клиентам</a
+                      >
+                    </li>
+                    <li id="menu_item_5" class="menu_item">
+                      <a href="#" class="menu_item_link">Доставка и оплата</a>
+                    </li>
+                    <li
+                      id="menu_item_6"
+                      class="menu_item menu-item-has-children menu_item_6">
+                      <a href="#" class="menu_item_link">О нас</a>
+                      <div
+                        id="toggle-sign"
+                        class="plus toggle-sign-menu-item_6">
+                        <span class="horizontal-line"></span>
+                        <span class="vertical-line"></span>
+                      </div>
+                      <ul class="submenu submenu_about_Us">
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Цветочная подписка</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="footer_info_phone">
+                  <div class="phone_number">
+                    <a href="tel:+74956425797" class="footer__tel"
+                      >+7 (495) 642-57-97</a
+                    >
+                    <a href="tel:+79854004534" class="footer__tel"
+                      >+7 (985) 400-45-34</a
+                    >
+                    <a href="#" class="callback">Заказать звонок</a>
+                  </div>
+                  <div class="footer_info_social">
+                    <a href="#" class="soc-link">
+                      <svg class="soc-link__icon icon-whatsapp">
+                        <use xlink:href="/images/sprite.svg#whatsapp"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="soc-link footer_info_social___two">
+                      <svg class="soc-link__icon icon-telegram">
+                        <use xlink:href="/images/sprite.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="header_icon">
+              <div class="icon_box">
+                <a href="#" class="icon_box___item"
+                  ><svg class="icon-search">
+                    <use xlink:href="/images/sprite.svg#search"></use>
+                  </svg>
+                </a>
+                <a href="#" class="icon_box___item">
+                  <svg class="icon-user">
+                    <use
+                      xlink:href="/images/sprite.svg#feather_user-check"></use>
+                  </svg>
+                </a>
+                <a href="#" class="icon_box___item">
+                  <svg class="icon-heart">
+                    <use xlink:href="/images/sprite.svg#heart-outlined"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="cart">
+                <a href="#" class="cart_button"
+                  ><img
+                    src="/images/cart.svg"
+                    width="24"
+                    height="24"
+                    alt="cart" /><span href="#" class="cart_count">0</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Основная картинка главной страницы -->
+    <div class="container full_size_subscription">
+      <div class="main_slide_block">
+        <div class="first">
+          <img class="first_img_laptop" src="/images/flor1.png" />
+          <img class="first_img_mobile" src="/images/first_img_mobile.png" />
+        </div>
+        <div class="second">
+          <div class="logo_2">
+            <img src="/images/logo2.svg" width="306" height="138" />
+          </div>
+          <div class="text-block">
+            <h1>Каждый день новые работы</h1>
+            <button class="button main_slide_button" type="button">
+              Выбрать букет
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Орнамент-->
+    <div class="container">
+      <div class="advantages">
+        <div class="advantages_item advantages_item_1">
+          <img
+            class="advantages_item_img"
+            src="/images/Ornament1.png"
+            width="52,5"
+            height="80" />
+          <p class="advantages_item_text advantages_item_text1">
+            Уникальные букеты
+          </p>
+        </div>
+        <div class="advantages_item advantages_item_2">
+          <img
+            class="advantages_item_img"
+            src="/images/Ornament2.png"
+            width="58,99"
+            height="80" />
+          <p class="advantages_item_text advantages_item_text2">
+            Пунктуальная доставка
+          </p>
+        </div>
+        <div class="advantages_item advantages_item_3">
+          <img
+            class="advantages_item_img"
+            src="/images/Ornament3.png"
+            width="54,95"
+            height="80" />
+          <p class="advantages_item_text advantages_item_text3">
+            Полная конфиденциальность
+          </p>
+        </div>
+        <div class="advantages_item advantages_item_4">
+          <img
+            class="advantages_item_img"
+            src="/images/Ornament4.png"
+            width="67,88"
+            height="80" />
+          <p class="advantages_item_text advantages_item_text4">
+            Фото букета перед отправкой
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Основной блок картинок-->
+    <div class="container">
+      <div class="gallery">
+        <div class="gallery_first">
+          <div class="item item1">
+            <img src="/images/Rectangle1.png" />
+            <a href="#" class="text_img1">Авторские<br />букеты</a>
+          </div>
+          <div class="item item2">
+            <img src="/images/Rectangle2.png" />
+            <a href="#" class="text_img2">Букеты<br />в корзинке</a>
+          </div>
+          <div class="item item3">
+            <img src="/images/Rectangle3.png" />
+            <a href="#" class="text_img3">Букеты<br />в коробке</a>
+          </div>
+        </div>
+        <div class="gallery_second">
+          <div class="item item4">
+            <img src="/images/Rectangle4.png" />
+            <a href="#" class="text_img4">Моно-<br />букеты</a>
+          </div>
+          <div class="item item5">
+            <img src="/images/Rectangle5.png" />
+            <a href="#" class="text_img5">Съедобные<br />композиции</a>
+          </div>
+          <div class="item item6">
+            <img src="/images/Rectangle6.png" />
+            <a href="#" class="text_img6">Букеты<br />к 1 сентября</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Хиты продаж-->
+    <div id="bestsellers" class="container">
+      <div class="title">
+        <h2 class="h2">Хиты продаж</h2>
+        <button class="button title_button" type="button">Все букеты</button>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div>
+      </div>
+    </div>
+    <!--Новинки-->
+    <div id="new_items" class="container">
+      <div class="title">
+        <h2 class="h2">Новинки</h2>
+        <button class="button title_button" type="button">Все букеты</button>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="prod-item">
+              <a><img src="/images/swiper_1.webp" alt="цветы" /></a>
+              <div class="prod-item__caption">
+                <div class="prod-item__title">
+                  <a href="#">Монобукет пионов с эвкалиптом</a>
+                </div>
+                <div class="row">
+                  <div class="prod-item__price">3 510 р.</div>
+                  <div class="col-auto">
+                    <button
+                      class="prod-item__btn js-add-to-favorite"
+                      type="button"
+                      data-item="14249">
+                      <svg class="icon icon-heart-outlined">
+                        <use
+                          xlink:href="/images/sprite.svg#heart-outlined"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="prod-item__btn prod-item__btn--basket"
+                      type="button">
+                      <svg class="icon icon-basket">
+                        <use xlink:href="/images/sprite.svg#basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div>
+      </div>
+    </div>
+    <!--Букет к поводу-->
+    <div id="bouquet_for_occasion" class="container">
+      <div class="title">
+        <h2 class="h2">Букет к поводу</h2>
+        <p class="bouquet_text">
+          Мы сделали тематические подборки, чтобы Вам было проще определиться с
+          выбором букета
+        </p>
+      </div>
+      <div class="gallery_bouquet gallery">
+        <div class="item item7">
+          <img src="/images/Rectangle7.png" />
+          <a href="#" class="text_img7">Порадуйте<br />любимую</a>
+        </div>
+        <div class="item item8">
+          <img src="/images/Rectangle8.png" />
+          <a href="#" class="text_img8">Чудеса<br />в корзинке</a>
+        </div>
+        <div class="item item9">
+          <img src="/images/Rectangle9.png" />
+          <a href="#" class="text_img9">Свадебная<br />флористика</a>
+        </div>
+        <div class="item item10">
+          <img src="/images/Rectangle10.png" />
+          <a href="#" class="text_img10">Дарите яркое<br />настроение</a>
+        </div>
+      </div>
+    </div>
+    <!--Цветочная подписка-->
+    <div class="container full_size_subscription">
+      <div class="subscription">
+        <div class="subscription_auto">
+          <img class="car_laptop" src="/images/car.png" />
+          <img class="car_mobile" src="/images/car_final.webp" />
+        </div>
+        <div class="subscription_text">
+          <h2 class="subscription_text_h2">
+            Цветочная подписка. <br />Вы никогда не забудете что-то важное
+          </h2>
+          <p class="subscription_text_p">
+            Регулярно доставляемые цветы домой, в офис и вашим близким
+          </p>
+          <button class="button subscription_button" type="button">
+            Узнать больше
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Блок 4 флориста-->
+    <div class="container">
+      <div class="about_company">
+        <h2 class="h2">
+          <span class="green">4 флориста</span> — это магазин цветов, где вы
+          точно найдёте букет своей мечты!
+        </h2>
+        <p class="about_company_text">
+          С 2005 года мы постоянно радуем наших клиентов красивыми и
+          оригинальными свежими букетами и цветочными композициями. Благодаря
+          огромному опыту работы, наши флористы с первых слов понимают любого
+          клиента. Выслушиваем пожелания, подсказываем, что с нашей точки
+          зрения, будет более интересным вариантом решения Вашей задумки.
+        </p>
+        <p class="about_company_text">
+          Многие из Вас знают нас, как талантливых декораторов. Одно из основных
+          направлений нашей деятельности — оформление свадеб цветами.
+        </p>
+        <button class="button about_company_button" type="button">
+          Узнать больше
+        </button>
+      </div>
+    </div>
+    <!--Блок скачивания приложения-->
+    <div class="container full_size_subscription">
+      <div class="application">
+        <div class="application_text">
+          <p>
+            Скачайте наше <br />приложение<br />
+            и получайте цветы<br />
+            в подарок!
+          </p>
+        </div>
+        <div class="application_img">
+          <div class="application_apple">
+            <img src="/images/appstore.webp" />
+          </div>
+          <div class="application_google">
+            <img src="/images/gplay.webp" />
+          </div>
+        </div>
+        <div class="telephone">
+          <img src="/images/telefon.png" alt="Телефон" />
+        </div>
+      </div>
+    </div>
+
+    <!--Подвал-->
+    <footer>
+      <div class="footer-top-size">
+        <div class="container">
+          <div class="footer-top">
+            <!-- Здесь верхняя часть подвала -->
+            <div class="footer-top___left">
+              <div class="footer_top_about_us">
+                <h3 class="footer_title">
+                  О нас
+                  <div
+                    id="toggle-sign"
+                    class="plus toggle-sign-footer-item_1 footer-toggle">
+                    <span class="horizontal-line"></span>
+                    <span class="vertical-line"></span>
+                  </div>
+                </h3>
+                <ul class="footer_menu top_about_us">
+                  <li class="footer_menu__item">
+                    <a href="#">О мастерской</a>
+                  </li>
+                  <li class="footer_menu__item">
+                    <a href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="footer_menu__item"><a href="#">Контакты</a></li>
+                  <li class="footer_menu__item">
+                    <a href="#">Корпоративным клиентам</a>
+                  </li>
+                  <li class="footer_menu__item">
+                    <a href="#">Цветочная подписка</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_top_category">
+                <h3 class="footer_title">
+                  Категория
+                  <div
+                    id="toggle-sign"
+                    class="plus toggle-sign-footer-item_2 footer-toggle">
+                    <span class="horizontal-line"></span>
+                    <span class="vertical-line"></span>
+                  </div>
+                </h3>
+                <ul class="footer_menu category">
+                  <li class="footer_menu__item">
+                    <a href="#">Авторские букеты</a>
+                  </li>
+                  <li class="footer_menu__item"><a href="#">Монобукеты</a></li>
+                  <li class="footer_menu__item">
+                    <a href="#">Цветочные композиции</a>
+                  </li>
+                  <li class="footer_menu__item">
+                    <a href="#">Съедобные композиции</a>
+                  </li>
+                  <li class="footer_menu__item"><a href="#">Подарки</a></li>
+                </ul>
+              </div>
+              <div class="footer_top_bouquet_selection">
+                <h3 class="footer_title">
+                  Выбор букета
+                  <div
+                    id="toggle-sign"
+                    class="plus toggle-sign-footer-item_3 footer-toggle">
+                    <span class="horizontal-line"></span>
+                    <span class="vertical-line"></span>
+                  </div>
+                </h3>
+                <ul class="footer_menu bouquet_selection">
+                  <li class="footer_menu__item"><a href="#">Кому</a></li>
+                  <li class="footer_menu__item">
+                    <a href="#">Цветовая гамма</a>
+                  </li>
+                  <li class="footer_menu__item"><a href="#">Цветы</a></li>
+                  <li class="footer_menu__item"><a href="#">Повод</a></li>
+                  <li class="footer_menu__item"><a href="#">Стоимость</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_info">
+              <div class="footer_location footer_address_1">
+                <p>м.Октябрьская,4-ый Добрынинский пер.д.8</p>
+                <a href="#"
+                  ><i><img src="/images/location.svg" alt="location" /></i>На
+                  карте</a
+                >
+              </div>
+              <div class="footer_location footer_address_2">
+                <p>м.Бауманская, ул.Ладожская 10</p>
+                <a href="#"
+                  ><i><img src="/images/location.svg" alt="location" /></i>На
+                  карте</a
+                >
+              </div>
+              <div class="footer_location footer_time">
+                <p>8:00-21:00</p>
+                <p>Без выходных</p>
+              </div>
+            </div>
+            <div class="footer_info_phone">
+              <div class="phone_number">
+                <a href="tel:+74956425797" class="footer__tel"
+                  >+7 (495) 642-57-97</a
+                >
+                <a href="tel:+79854004534" class="footer__tel"
+                  >+7 (985) 400-45-34</a
+                >
+                <a href="#" class="callback">Заказать звонок</a>
+              </div>
+              <div class="footer_info_social">
+                <a href="#" class="soc-link">
+                  <svg class="soc-link__icon icon-whatsapp">
+                    <use xlink:href="/images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+                <a href="#" class="soc-link footer_info_social___two">
+                  <svg class="soc-link__icon icon-telegram">
+                    <use xlink:href="/images/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Нижняя часть подвала-->
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer_bottom_logo">
+            <img
+              src="/images/logo.svg"
+              width="151"
+              height="68"
+              alt="Логотип подвала" />
+          </div>
+          <div class="footer_bottom_social">
+            <a href="#" class="footer_bottom_social___item vk">
+              <svg class="icon-vk">
+                <use xlink:href="/images/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer_bottom_social___item instagram">
+              <svg class="icon-instagram">
+                <use xlink:href="/images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="mailto:info@4florista.ru" class="footer_mail"
+              >info@4florista.ru</a
+            >
+          </div>
+          <div class="footer_bottom_agreement">
+            <a class="footer_bottom_agreement_1"
+              >Политика в отношении обработки персональных данных</a
+            >
+            <a class="footer_bottom_agreement_2"
+              >Согласие на обработку персональных данных</a
+            >
+          </div>
+          <div class="footer_bottom_copyright">
+            <p>© 2020 - 2023</p>
+          </div>
+          <button class="button_round">
+            <img class="chat" src="/images/chat.svg" />
+            <img class="chat_mobile" src="/images/chat_mobile.svg" />
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
